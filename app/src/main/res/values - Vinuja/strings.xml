@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">QuickTicks!</string>
+    <string name="home_button_desc">Home Button</string>
+    <string name="UserName">Vinuja Ransith\n</string>
+    <string name="Address">Age: 22\n\nEmail: vinujaransith039@gmail.com\n\nPhone: 0769451554</string>
+    <string-array name="priority_array">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="category_array">
+        <item>Work</item>
+        <item>Personal</item>
+    </string-array>
+</resources>

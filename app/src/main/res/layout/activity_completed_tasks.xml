@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/Dark_Slate_Blue">
+
+    <TextView
+        android:id="@+id/completed_tasks_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completed Tasks"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/Bright_Blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/completed_tasks_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/completed_tasks_title"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/Light_Gray"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/delete_all_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:text="Delete All Completed Tasks"
+        android:backgroundTint="@color/colorError"
+        android:textColor="@color/colorOnSecondary"
+        android:textAppearance="?attr/textAppearanceButton" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_all_button"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        android:backgroundTint="@color/Bright_Blue"
+        android:textColor="@color/colorOnPrimary"
+        android:textAppearance="?attr/textAppearanceButton" />
+</RelativeLayout>

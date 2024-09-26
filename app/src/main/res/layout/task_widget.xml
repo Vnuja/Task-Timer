@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/Dark_Slate_Blue">
+
+    <TextView
+    android:id="@+id/widget_task_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Upcoming Tasks"
+    android:textSize="18sp"
+    android:textColor="@color/Bright_Blue"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textAppearance="?attr/textAppearanceSubtitle1"/>
+</LinearLayout>

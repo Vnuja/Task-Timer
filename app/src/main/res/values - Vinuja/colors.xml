@@ -1,0 +1,62 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#FFDE03</color>
+    <color name="colorPrimaryVariant">#C6B200</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#0336FF</color>
+    <color name="colorSecondaryVariant">#0029CC</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <!-- Background (Light Theme) -->
+    <color name="colorBackground">#F0F4C3</color> <!-- Light background color -->
+    <color name="colorSurface">#F0F4C3</color> <!-- Light surface color -->
+    <color name="colorOnSurface">#000000</color> <!-- Text on surface -->
+
+    <!-- Background (Dark Theme) -->
+    <color name="dark_colorBackground">#121212</color> <!-- Dark background color -->
+    <color name="dark_colorSurface">#1E1E1E</color> <!-- Dark surface color -->
+    <color name="dark_colorOnSurface">#FFFFFF</color> <!-- Text on dark surface -->
+
+    <!-- Buttons -->
+    <color name="colorInteractivePositive">#FFAF00</color>
+    <color name="colorInteractiveNegative">#0026A8</color>
+    <color name="colorInteractiveNeutral">#BDBDBD</color>
+    <color name="colorInteractiveAccent">#FF4081</color>
+    <color name="colorOnTertiary">#000000</color>
+
+    <!-- Text -->
+    <color name="colorOnBackground">#000000</color>
+    <color name="dark_colorOnBackground">#FFFFFF</color> <!-- Text on dark background -->
+
+    <!-- Error -->
+    <color name="colorError">#D32F2F</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!-- Neutral Colors -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brown">#7C4700</color>
+    <color name="dark_brown">#362312</color>
+    <color name="blue">#57A0D2</color>
+    <color name="dark_blue">#003151</color>
+    <color name="cream">#E6E3D3</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF5722</color>
+    <color name="dark_gray">#858585</color>
+    <color name="medium_gray">#D1D1D1</color>
+    <color name="medium_green">#80FF85</color>
+    <color name="Dark_Slate_Blue">#1E1E2E</color>
+    <color name="Midnight_Blue">#252537</color>
+    <color name="Light_Gray">#F5F5F5 </color>
+    <color name="Muted_Gray">#A3A3B3 </color>
+    <color name="Vibrant_Green">#4CAF50</color>
+    <color name="Bright_Orange">#FF5722 </color>
+    <color name="Bright_Blue">#0096FF</color>
+    <color name="Slate_Gray">#3A3A4F</color>
+    <color name="primaryColor">#FF6200EE</color>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark_Slate_Blue"
+    android:padding="16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/stopwatch_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="16dp">
+
+        <!-- Change TextView to Chronometer -->
+        <Chronometer
+            android:id="@+id/stopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="48sp"
+            android:textColor="@color/colorOnSurface"
+            android:textAppearance="?attr/textAppearanceHeadline2"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopwatch_card"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:backgroundTint="@color/Bright_Blue"
+            android:textColor="@color/Dark_Slate_Blue"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="?attr/textAppearanceButton"/>
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:backgroundTint="@color/Light_Gray"
+            android:textColor="@color/Dark_Slate_Blue"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="?attr/textAppearanceButton"/>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:backgroundTint="@color/Bright_Blue"
+            android:textColor="@color/Dark_Slate_Blue"
+            android:textAppearance="?attr/textAppearanceButton"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttons_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Back"
+        android:backgroundTint="@color/Light_Gray"
+        android:textColor="@color/Dark_Slate_Blue"
+        android:textAppearance="?attr/textAppearanceButton"/>
+
+</RelativeLayout>

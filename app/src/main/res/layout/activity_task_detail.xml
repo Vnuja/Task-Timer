@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/Dark_Slate_Blue">
+
+    <TextView
+        android:id="@+id/task_name_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/Bright_Blue"
+        android:text="Task Name"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="?attr/textAppearanceHeadline4"/>
+
+    <TextView
+        android:id="@+id/task_description_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/Light_Gray"
+        android:layout_marginTop="4dp"
+        android:text="Task Description"
+        android:textAppearance="?attr/textAppearanceBody1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/Light_Gray"
+            android:text="Priority:"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <TextView
+            android:id="@+id/task_priority_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/Light_Gray"
+            android:layout_marginStart="8dp"
+            android:text="Task Priority"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/Light_Gray"
+            android:text="Category:"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <TextView
+            android:id="@+id/task_category_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/Light_Gray"
+            android:layout_marginStart="8dp"
+            android:text="Task Category"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+    </LinearLayout>
+
+    <!-- Checkbox for Task Completion -->
+    <CheckBox
+        android:id="@+id/task_completed_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark as Completed"
+        android:textColor="@color/Light_Gray"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/colorInteractivePositive"
+        android:textColor="@color/colorOnPrimary"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100" />
+
+    <Chronometer
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="36sp"
+        android:textColor="@color/Light_Gray"
+        android:layout_gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:backgroundTint="@color/colorInteractivePositive"
+            android:textColor="@color/colorOnTertiary"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="?attr/textAppearanceButton"/>
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:backgroundTint="@color/Light_Gray"
+            android:textColor="@color/Dark_Slate_Blue"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="?attr/textAppearanceButton"/>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:backgroundTint="@color/colorError"
+            android:textColor="@color/Light_Gray"
+            android:textAppearance="?attr/textAppearanceButton"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_alarm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:backgroundTint="@color/colorInteractivePositive"
+        android:textColor="@color/colorOnTertiary"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textAppearance="?attr/textAppearanceButton"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="@color/Bright_Blue"
+        android:textColor="@color/Dark_Slate_Blue"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textAppearance="?attr/textAppearanceButton"/>
+
+</LinearLayout>

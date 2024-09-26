@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/Dark_Slate_Blue">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Work Tasks"
+            android:textSize="24sp"
+            android:textColor="@color/Light_Gray"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textAppearance="?attr/textAppearanceHeadline4"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_work_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:backgroundTint="@color/Bright_Blue"
+        android:textColor="@color/Dark_Slate_Blue"
+        android:textAppearance="?attr/textAppearanceButton"/>
+</LinearLayout>

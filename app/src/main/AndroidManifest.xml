@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for notifications and alarms -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TimeManagementApp"
+        tools:targetApi="31">
+
+        <!-- MainActivity Declaration -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TimeManagementApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities Declaration -->
+        <activity
+            android:name=".AddTaskActivity"
+            android:exported="true"
+            android:label="Add Task"
+            android:theme="@style/Theme.TimeManagementApp" />
+        <activity
+            android:name=".TimerActivity"
+            android:exported="true"
+            android:label="Timer/Stopwatch"
+            android:theme="@style/Theme.TimeManagementApp" />
+
+        <activity
+            android:name=".TaskDetailActivity"
+            android:exported="true"
+            android:label="Task Details"
+            android:theme="@style/Theme.TimeManagementApp" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:label="Profile"
+            android:theme="@style/Theme.TimeManagementApp" />
+        <activity
+            android:name=".PersonalTasksActivity"
+            android:exported="true"
+            android:label="Personal Tasks"
+            android:theme="@style/Theme.TimeManagementApp" />
+        <activity
+            android:name=".WorkTasksActivity"
+            android:exported="true"
+            android:label="Work Tasks"
+            android:theme="@style/Theme.TimeManagementApp" />
+        <activity
+            android:name=".CompletedTasksActivity"
+            android:exported="true"
+            android:label="Completed Tasks"
+            android:theme="@style/Theme.TimeManagementApp" />
+
+        <service
+            android:name=".AlarmService"
+            android:exported="true" />
+
+        <!-- TaskWidgetProvider Declaration -->
+        <receiver
+            android:name=".TaskWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/task_widget_info" />
+        </receiver>
+
+        <!-- AlarmReceiver Declaration for handling alarms -->
+        <receiver
+            android:name=".TaskDetailActivity$AlarmReceiver"
+            android:exported="true">
+        </receiver>
+        <!-- ReminderReceiver Declaration for handling reminders -->
+        <receiver
+            android:name=".ReminderReceiver"
+            android:exported="true" />
+    </application>
+</manifest>
